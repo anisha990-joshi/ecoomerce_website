@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>customer</title>
+</head>
+<body bgcolor="red">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onlineshoes</title>
+</head>
+{% for customer in customerr %}
+<div class="card" style="width: 18rem;">
+
+    <div class="card-body">
+        <h5 class="card-title">{{ customer.first_name }}</h5>
+        <p class="card-text">{{ customer.last_name }}       </p>
+        <p class="card-text">{{ customer.phone }}       </p>
+        <p class="card-text">{{ customer.password }}       </p>
+        <p class="card-text">{{ customer.email }}       </p>
+        <a href="http://127.0.0.1:8000/products "><b><input type="submit" value="submit"</b></a>
+    </div>
+</div>
+{% endfor %}
+
+</body>
+</html>

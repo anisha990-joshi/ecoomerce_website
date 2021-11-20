@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>category</title>
+</head>
+{% for category in categories %}
+<body bgcolor="yellow">
+<div class="card" style="width: 18rem;">
+
+  <div class="card-body">
+     <h5 class="card-title">{{ category.name }}</h5>
+     <h5 class="card-slug"><a href="{{ category.url }}"><b><input type="button" style="background-color:black;color:white;width:150px;
+height:40px;" value="Checkout!!"></b></a></h5>
+    {% endfor %}
+
+
+
+ </div>
+</body>
+</html>

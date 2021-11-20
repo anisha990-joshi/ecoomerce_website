@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>onlineshoes</title>
+</head>
+<body bgcolor="pink">
+<h1> men shoes:-</h1>
+<img src="media/images/shoemen2.jpg" alt="Trulli"width="140" height="140" >
+
+{% for product in productss %}
+
+<div class="card" style="width: 18rem;">
+
+
+  <div class="card-body">
+    <h5 class="card-title">{{ product.productname }}</h5>
+    <p class="card-text">{{ product.description }}</p>
+
+    <p class="card-text">Price - {{ product.price }}</p>
+    <a href="http://127.0.0.1:8000/black_shoe" class="btn btn-primary">Buy Now</a>
+  </div>
+</div>
+{% endfor %}
+
+</body>
+</html>
